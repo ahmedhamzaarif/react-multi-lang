@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --primaryColor: #845ec2;
+  --secondaryColor: #b0a8b9;
+  --bodyColor: #fbeaff;
+
+}
+*{ scroll-behavior: smooth; margin: 0;}
+html, body{ font-family: 'Poppins', sans-serif; font-size: 15px; background-color: var(--bodyColor);}
+
+#header{position: fixed; top: 0;left:0;z-index:10;width:100%;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;background-color: #fff;}
+#headerOffset{padding-top: 60px;}
+
+#header .navbar .navbar-brand{font-size: 2rem;}
+#header .navbar .navbar-brand span{font-weight: 500;}
+#header .navbar .userImg{height: 40px; border-radius: 50%;}
+
+#footer{background-color: var(--secondaryColor);padding-top: 1rem;padding-bottom: 1rem;}
+
+.editImg{position: relative;;margin: 0 auto 20px; display: flex;background-color: #eee; border-radius: 50%;width: 100px;height: 100px;}
+.editImg img{border-radius: 50%;}
+.editIcon{background-color: var(--primaryColor);color: #fff;fill:#fff;line-height: 1;padding: 0.2rem;position: absolute;z-index: 2;bottom: 0;right: 0;border-radius: 50%;}
+.errorMsg{color: tomato;}
+.profileImg{border-radius: 50%;}
+
+section{padding-top: 100px;padding-bottom: 100px;}
+
+#sidebar{background-color: #fff;padding: 2rem;min-height: 100vh;
+  position: fixed;top: 0;
+  display: flex; flex-direction: column;justify-content: space-around;height: 100%;}
+#sidebar .nav-item,
+#sidebar .nav-link{display: flex; align-items: center;gap: 0.5rem;}
+#contactPage .col-left .title{font-size: 3rem;}
+#contactPage .col-left .desc{color: #999;font-size: 2rem;}
+#contactPage .col-right .office-details{margin: 15px 0; border-bottom: 1px solid #ddd;}
+#contactPage .col-right .office-details:first-child{margin-top: 0;}
+#contactPage .col-right .office-details:last-child{border-bottom: none;}
+#contactPage .col-right .office-details .timing{color: #999;}
+
+@media(max-width:1199px){
+  section{padding-top: 75px;padding-bottom: 75px;}
+  #contactPage .col-left .title{font-size: 2.5rem;}
+  #contactPage .col-left .desc{font-size: 1.5rem;}
+}
+@media(max-width:992px){
+  html, body{font-size: 14px;}
+  section{padding-top: 50px;padding-bottom: 50px;}
+}
+@media(max-width:767px){
+#contactPage .col-left{margin-bottom: 30px;}
+}
